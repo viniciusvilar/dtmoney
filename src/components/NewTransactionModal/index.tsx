@@ -13,6 +13,10 @@ interface NewTransactionModalProps {
 export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionModalProps) {
     const [type, setType] = useState('deposit');
 
+    function handleCreateNewTransaction() {
+
+    }
+
     return (
         <Modal 
             isOpen={isOpen} 
@@ -28,7 +32,8 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
             >
                 <img src={closeImg} alt="Fechar modal " />
             </button>
-            <Container>
+
+            <Container onSubmit={handleCreateNewTransaction}>
                 <h2>Cadastrar transação</h2>
 
                 <input
@@ -47,6 +52,7 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                         type='button'
                         onClick={() => { setType('deposit'); }}
                         isActive={type === 'deposit'}
+                        activeColor="green"
                     >
                         <img src={incomeImg} alt="Entrada" />
                         <span>Entrada</span>
@@ -54,8 +60,9 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
 
                     <RadioBox
                         type='button'
-                        onClick={() => { setType('withdraw '); }}
+                        onClick={() => { setType('withdraw'); }}
                         isActive={type === 'withdraw'}
+                        activeColor="red"
                     >
                         <img src={outcomeImg} alt="Saída" />
                         <span>Saída</span>
