@@ -2,6 +2,14 @@
 
 Aplicação para controle financeiro. Cadastro de entradas e saídas.
 
+## Imagens
+<p>
+  <img width="480" src="src/assets/foto001.png">
+  <img width="480" src="src/assets/foto002.PNG">
+  <img width="480" src="src/assets/foto003.PNG">
+  <img width="480" src="src/assets/foto004.png">
+</p>
+
 ## Tecnologias
 
 Ferramentas usadas no projeto:
