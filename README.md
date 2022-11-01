@@ -4,8 +4,8 @@ Aplicação para controle financeiro. Cadastro de entradas e saídas.
 
 ## Imagens
 <p>
-  <img width="480" src="src/assets/toReadme/foto001.png">
-  <img width="480" src="src/assets/toReadme/foto002.png">
+  <img width="720" src="src/assets/toReadme/foto001.png">
+  <img width="720" src="src/assets/toReadme/foto002.png">
 </p>
 
 ## Tecnologias
